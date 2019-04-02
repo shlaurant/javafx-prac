@@ -19,6 +19,7 @@ public final class Login extends Application {
 
     @Override
     public void start(Stage primaryStage) {
+        actionTarget.setId("actiontarget");
         primaryStage.setTitle("JavaFX Welcome");
         primaryStage.setScene(sceneWith(LoginGridPane()));
         primaryStage.show();
@@ -75,6 +76,7 @@ public final class Login extends Application {
     private Text titleText() {
         Text titleText = new Text("Welcome");
         titleText.setFont(Font.font("Tahoma", FontWeight.NORMAL, 20));
+        titleText.setId("welcome-text");
         return titleText;
     }
 
