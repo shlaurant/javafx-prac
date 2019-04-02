@@ -42,10 +42,7 @@ public final class Login extends Application {
 
     private Button btnToAttach() {
         Button btn = new Button("Sign in");
-        btn.setOnAction(event -> {
-            actionTarget.setFill(Color.FIREBRICK);
-            actionTarget.setText("Pressed!");
-        });
+        btn.setOnAction(event -> actionTarget.setText("Pressed!"));
         return btn;
     }
 
@@ -75,7 +72,6 @@ public final class Login extends Application {
 
     private Text titleText() {
         Text titleText = new Text("Welcome");
-        titleText.setFont(Font.font("Tahoma", FontWeight.NORMAL, 20));
         titleText.setId("welcome-text");
         return titleText;
     }
