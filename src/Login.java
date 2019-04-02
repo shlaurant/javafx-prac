@@ -79,7 +79,10 @@ public final class Login extends Application {
     }
 
     private Scene sceneWith(GridPane grid) {
-        return new Scene(grid, 300, 275);
+        Scene scene = new Scene(grid, 300, 275);
+        scene.getStylesheets().add(Login.class.getResource("login.css")
+                .toExternalForm());
+        return scene;
     }
 
     private GridPane gridPane() {
