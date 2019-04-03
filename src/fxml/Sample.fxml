@@ -11,7 +11,7 @@
     <padding>
         <Insets top="25" right="25" bottom="10" left="25"/>
     </padding>
-    <Text text="Welcome" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
+    <Text fx:id="welcometext" text="Welcome" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
 
     <Label text="User Name:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
     <TextField GridPane.columnIndex="1" GridPane.rowIndex="1"/>
@@ -24,4 +24,8 @@
     </HBox>
 
     <Text fx:id="actiontarget" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+
+    <stylesheets>
+        <URL value="@login.css" />
+    </stylesheets>
 </GridPane>
